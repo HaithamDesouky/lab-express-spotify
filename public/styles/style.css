@@ -29,10 +29,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .whitebg input {
-  width: 25rem;
+  width: 60%;
   height: 1.4rem;
   padding: 0.5rem;
   border: 1px gray solid;
@@ -48,6 +49,88 @@
   font-size: 1rem;
 }
 
-input:hover{
-  
+.whitebg button:hover {
+  background-color: white;
+  color: rgb(255, 102, 102);
+  border: 1px rgb(255, 102, 102) solid;
+}
+
+/* Main Menu done */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.result {
+  width: 30%;
+  margin: 1rem;
+  background-color: rgb(77, 77, 77);
+  text-align: center;
+  color: azure;
+  padding-bottom: 1rem;
+}
+
+.result img {
+  width: 100%;
+}
+
+.result a {
+  background-color: rgb(255, 102, 102);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 10%;
+  margin-top: 10px;
+}
+
+.result h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: rgb(74, 74, 74);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: white;
+  padding-right: 2rem;
+}
+
+nav h1 {
+  margin-right: 6rem;
+}
+.tracks {
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.tracks {
+  font-size: 1.5rem;
+}
+
+#album-for {
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .result {
+    width: 80%;
+  }
 }

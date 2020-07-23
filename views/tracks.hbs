@@ -1,12 +1,14 @@
-<h1> tracks</h1>
-
+<nav>
+<h1> Tracks</h1>
+<h1>Listen</h1>
+</nav>
 {{#each tracks.items}}
 
-<div>
+<div class="tracks">
 
-<h4>{{this.name}}</h4>  <span> <audio controls>
+<h4>{{this.name}}</h4>   <audio controls>
     <source src="{{this.preview_url}}" type="audio/mpeg">
-</audio></span>
+</audio>
 
 </div>
 
